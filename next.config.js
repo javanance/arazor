@@ -12,7 +12,6 @@ const nextConfig = {
 };
 
 module.exports = withContentlayer(nextConfig);
-next.config.js;
 
 // import { withContentlayer } from 'next-contentlayer'
 // export default withContentlayer({
