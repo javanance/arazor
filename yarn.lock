@@ -1350,6 +1350,22 @@
     "@typescript-eslint/types" "5.62.0"
     eslint-visitor-keys "^3.3.0"
 
+"@usecsv/js@^0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@usecsv/js/-/js-0.16.0.tgz#9912bf2b25dcfa7e838e7d63701e3b2fa31deba9"
+  integrity sha512-IQQmWwMbV5GoShC3V+DdIonGGvOAU9pBdwOAMFyuSMqs2SJP20peDhHhW77GWjyhrsBbYu5baHnS7Ft0s29kVg==
+  dependencies:
+    insert-css "^2.0.0"
+    penpal "^6.0.1"
+    when-dom-ready "^1.2.12"
+
+"@usecsv/react@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@usecsv/react/-/react-0.4.0.tgz#aaf7b9b9b242ce61c0af6f5c7c046ed22957af86"
+  integrity sha512-lJHjgnjsSSRIwntSni52/v+9U7mia0tjO+MDMi//fd3/cXggRwCz3y4qnyZRF8xioWMTL1KXvcMYGLJ3qs73pg==
+  dependencies:
+    "@usecsv/js" "^0.16.0"
+
 acorn-jsx@^5.0.0, acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
@@ -3453,6 +3469,11 @@ inline-style-parser@0.1.1:
   resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.1.1.tgz#ec8a3b429274e9c0a1f1c4ffa9453a7fef72cea1"
   integrity sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==
 
+insert-css@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/insert-css/-/insert-css-2.0.0.tgz#eb5d1097b7542f4c79ea3060d3aee07d053880f4"
+  integrity sha512-xGq5ISgcUP5cvGkS2MMFLtPDBtrtQPSFfC6gA6U8wHKqfjTIMZLZNxOItQnoSjdOzlXOLU/yD32RKC4SvjNbtA==
+
 internal-slot@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/internal-slot/-/internal-slot-1.0.5.tgz#f2a2ee21f668f8627a4667f309dc0f4fb6674986"
@@ -5024,6 +5045,11 @@ path-type@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
+
+penpal@^6.0.1:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/penpal/-/penpal-6.2.2.tgz#20a0a0592881a959e8c87116d854f9528b1aa601"
+  integrity sha512-RQD7hTx14/LY7QoS3tQYO3/fzVtwvZI+JeS5udgsu7FPaEDjlvfK9HBcme9/ipzSPKnrxSgacI9PI7154W62YQ==
 
 periscopic@^3.0.0:
   version "3.1.0"
@@ -6671,6 +6697,11 @@ whatwg-url@^5.0.0:
   dependencies:
     tr46 "~0.0.3"
     webidl-conversions "^3.0.0"
+
+when-dom-ready@^1.2.12:
+  version "1.2.12"
+  resolved "https://registry.yarnpkg.com/when-dom-ready/-/when-dom-ready-1.2.12.tgz#99f46f02ef65dbb2bb2f4b58c44588234e724c98"
+  integrity sha512-nEy7UvAylNMfOTTKE2c7QTFR2fyqTRaL/f+tuTpE4zU7iAF7Pk7aLmw6jZvhrwUTcK6pmnXFc0/N0Kzi/PHmEg==
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"

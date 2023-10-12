@@ -4,7 +4,7 @@ const { withContentlayer } = require("next-contentlayer");
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  // reactStrictMode: true,
+  reactStrictMode: true,
   // swcMinify: true
   //   sassOptions: {
   //     includePaths: [path.join(__dirname, "styles")],
