@@ -1,7 +1,7 @@
 import { sql } from "@vercel/postgres";
 
-export default async function Cart({ params }) {
-  const { rows } = await sql`SELECT * from pets`;
+export default async function Cart() {
+  const { rows } = await sql`SELECT * from Pet`;
 
   return (
     <div>

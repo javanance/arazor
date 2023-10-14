@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url=env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+  //url  	= process.env.DATABASE_URL
+  // url="postgres://javanance:z8V0yejhWvAI@ep-spring-boat-25707069-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&schema=public&pgbouncer=true&connect_timeout=20"
+  // directUrl = "postgres://javanance:z8V0yejhWvAI@ep-spring-boat-25707069.ap-southeast-1.aws.neon.tech/neondb?connect_timeout=10"
+  // If you want to use Prisma Migrate, you will need to manually create a shadow database
+  // https://neon.tech/docs/guides/prisma-migrate#configure-a-shadow-database-for-prisma-migrate
+  // make sure to append ?connect_timeout=10 to the connection string
+  // shadowDatabaseUrl = env(“SHADOW_DATABASE_URL”)
+}
+
+model Pet {
+  id        Int     @id @default(autoincrement())
+  email     String  @unique
+  password  String
+}
