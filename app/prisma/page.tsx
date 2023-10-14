@@ -1,17 +1,13 @@
-import { PrismaClient } from "@prisma/client";
+import { neon } from "@neondatabase/serverless";
 
-export default async function Prisma() {
-  console.log("prisma1");
-  const prisma = new PrismaClient();
-  console.log("prisma", prisma);
+async function getData() {
+  const sql = neon(process.env.DATABASE_URL);
 
-  const allUsers = await prisma.pet.findMany();
-  return (
-    <div>
-      <h1>Prisma</h1>
-      {allUsers.map((row) => (
-        <div key={row.id}>{row.email}</div>
-      ))}
-    </div>
-  );
+  const response = await sql`SELECT version()`;
+  console.log(response);
+  return response;
+}
+
+export default async function Page() {
+  const data = await getData();
 }
